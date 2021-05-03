@@ -8,8 +8,6 @@ def googleQuery(query) :
     query = query.replace(' ', '+')
 
     try :
-        # url = f'https://www.google.com/search?q={query}&oq={query}&aqs=chrome..69i57j46j69i59j35i39j0j46j0l2.4948j0j7&sourceid=chrome&ie=UTF-8'
-
         url = f"https://google.com/search?q={query}"
 
         getURL = requests.get(url, headers=headers)
